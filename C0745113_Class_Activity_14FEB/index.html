@@ -7,10 +7,12 @@
     
     <script type="text/javascript">
         function addNumbers(j) {
-            var sum = 0;
-            for (i = 0; i < j; i++) {
+            var sum = 0; i = 0;
+            while (i < j) {
                 sum += i;
+                i++;
             }
+            
             return sum;
         }
     </script>
@@ -19,8 +21,8 @@
 
 <body>
     <script>
-        var inputnumber = prompt("State Starting Number");
-        document.write(addNumbers(inputnumber));
+        var inpumber = prompt("State Starting Number");
+        document.write(addNumbers(inpumber));
     </script>
 </body>
 </html>
