@@ -4,7 +4,23 @@
     <meta charset="utf-8" />
     <title>C0745113_Class_Activity_14FEB</title>
     <link href="css/default.css" rel="stylesheet" />
-    
+    <!--<script type="text/javascript">
+        function addNumbers(j) {
+            var sum = 0;
+            for (i = 0; i < j; i++) {
+                sum += i;
+            }
+            return sum;
+        }
+        function addNumberWithWhileLoop(countUpto) {
+            var sum = 0, i = 0;
+            while (i < countUpto) {
+                sum += i;
+                i++;
+            }
+            return sum;
+        }
+    </script>
     <script type="text/javascript">
         var rows = prompt("How Many Rows For Your multiplication table?");
         var cols = prompt("How Many Columns For Your multiplication table?");
@@ -13,15 +29,12 @@
         if (cols == "" || cols == null)
             cols = 10;
         createTable(rows, cols);
-        function createTable(rows, cols)
-        {
+        function createTable(rows, cols) {
             var j = 1;
             var output = "<table border='1' width='500' cellspacing='0' cellpadding='5'>";
-            for (i = 1; i <= rows; i++)
-            {
+            for (i = 1; i <= rows; i++) {
                 output = output + "<tr>";
-                while (j <= cols)
-                {
+                while (j <= cols) {
                     output = output + "<td>" + i * j + "</td>";
                     j = j + 1;
                 }
@@ -31,10 +44,36 @@
             output = output + "</table>";
             document.write(output);
         }
-    </script>
+    </script>-->
+    <script type="text/javascript">
+        function trigger()
+        {
+            document.getElementById("hover").addEventListener("mouseover", popup);
+            function popup()
+            {
+                alert("Welcome To My Webpage!!!!");
+            }
+        }
 
+    </script>
+    <style>
+        p
+        {
+            font-size:50px;
+            position: fixed;
+            left:550px;
+            top:300px;
+        }
+    </style>
 </head>
 
-<body>
-    </body>
+<body onload=" trigger()">
+    <p id="hover">Welcome...!!</p>
+    <!--<script src="js/main.js"></script>
+    <script>
+                //var inputnumber = prompt("State Starting Number");
+                //document.write(addNumbers(inputnumber));
+                //document.write(addNumberWithWhileLoop(inputnumber));
+    </script>-->
+</body>
 </html>
