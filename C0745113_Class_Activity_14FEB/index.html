@@ -4,9 +4,23 @@
     <meta charset="utf-8" />
     <title>C0745113_Class_Activity_14FEB</title>
     <link href="css/default.css" rel="stylesheet" />
+    
+    <script type="text/javascript">
+        function addNumbers(j) {
+            var sum = 0;
+            for (i = 0; i < j; i++) {
+                sum += i;
+            }
+            return sum;
+        }
+    </script>
+
 </head>
+
 <body>
-    <div>Content goes here!</div>
-    <script src="js/main.js"></script>
+    <script>
+        var inputnumber = prompt("State Starting Number");
+        document.write(addNumbers(inputnumber));
+    </script>
 </body>
 </html>
